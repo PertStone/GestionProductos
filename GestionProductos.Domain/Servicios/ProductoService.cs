@@ -49,12 +49,7 @@ namespace GestionProductos.Domain.Servicios
             Retorno.Resultado = null;
             Retorno.Estado = false;
             Retorno.TotalItems = 0;
-
-            if (producto.FechaFabricacion >= producto.FechaValidez)
-            {
-                Retorno.Errores = "La fecha de fabricación no puede ser mayor o igual a la fecha de vencimiento.";                
-                return Retorno;
-            }
+            
             var IdProducto = await _repositorio.RecuperarPorCodigoProducto(CodigoProducto);
             if (IdProducto.Id == 0)
             {
@@ -81,13 +76,7 @@ namespace GestionProductos.Domain.Servicios
             Retorno.Resultado = null;
             Retorno.Estado = false;
             Retorno.TotalItems = 0;
-
-            if (producto.FechaFabricacion >= producto.FechaValidez)
-            {
-                Retorno.Errores = "La fecha de fabricación no puede ser mayor o igual a la fecha de vencimiento.";                
-                return Retorno;
-            }
-
+            
             var codigo = await _repositorio.RecuperarUltimoCodigoProducto();
             string NuevoCodigo = util.GenerarNuevoCodigo(codigo);
 

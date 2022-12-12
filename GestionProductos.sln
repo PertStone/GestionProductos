@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestionProductos.Domain", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestionProductos.Infraestructure", "GestionProductos.Infraestructure\GestionProductos.Infraestructure.csproj", "{7EF7A13D-9343-4D5C-9854-F112CC1D1F96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestionProductos.Api", "GestionProductos.Api\GestionProductos.Api.csproj", "{F2116598-1AD9-42E0-ABD1-C33FDC7D2B3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestionProductos.Api", "GestionProductos.Api\GestionProductos.Api.csproj", "{F2116598-1AD9-42E0-ABD1-C33FDC7D2B3B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
